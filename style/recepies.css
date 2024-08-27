@@ -1,0 +1,227 @@
+.container-card {
+  background-color: var(--color-darker-backgroung);
+ min-height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media(max-width:1050px){
+  .container-card, .receita-container {
+    display: flex;
+    flex-direction:column;
+    padding: 2rem;
+    gap:1rem;
+    align-items: center;
+  }
+
+
+   .card-info, .card-header, .card-description {
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  
+ 
+  .card-autor{
+    margin-top: 1rem;
+  }
+  
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+ 
+}
+
+span .destaque {
+  font-size: 1rem;
+}
+
+.card-title {
+  font-family: var(--font-family-heading);
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.card-description {
+  margin-top: 2rem;
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+  font-weight: 400;
+  height: 2rem;
+}
+
+.card-autor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+.card-autor img {
+  width: 2rem;
+}
+
+.card-autor-nome {
+   color: var(--color-muted);
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    font-weight: 600;
+   
+}
+
+.card-footer {
+  height: 2rem;
+  font-family: var(--font-family-base);
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.details-card {
+  background-color: var(--color-background);
+  height: 15rem;
+  width: 31rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 15px;
+
+}
+
+.details-benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+}
+
+h4 {
+  font-family: var(--font-family-heading);
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+
+}
+
+.avaliation {
+  font-family: var(--font-family-base);
+  color: #756A67;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+hr {
+  width: 100px;
+  color: var(--color-primary);
+  margin-top: 0.5rem;
+}
+
+.line {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.receita-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+@media(max-width:1050px){
+   .receita-container {
+    flex-direction: column;
+    
+  }
+}
+
+.modo-preparo {
+  background-color: var(--color-background-card);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.header-receita {
+  margin-bottom: 1.5rem;
+}
+
+.recepie-title {
+  font-family: var(--font-family-heading);
+  font-size: 2rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.recepie-subtitle {
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.number {
+  background-color: var(--color-primary);
+  width: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+
+.step-one, .step-two, .step-three, .step-four {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.step-description {
+  font-family: var(--font-family-base);
+  color: var(--color-muted);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.amount-ingredients {
+  background-color: var(--color-background-card);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.amount-header {
+  margin-bottom: 1.5rem;
+}
+
+.amount-title {
+  font-family: var(--font-family-heading);
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.list-ingredients {
+  display: flex;
+  justify-content:space-between;
+  padding: 0.5rem;
+  
+    
+}
+
+label {
+  font-weight: 500;
+  font-family: var(--font-family-base);
+  color: var(--color-muted);
+  font-size: 1.2rem;
+}

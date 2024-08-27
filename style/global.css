@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-background: #1f1517;
+    --color-text: #ffffff;
+    --color-primary: #a45a49;
+    --color-secondary: #e7a80e;
+    --color-accent: #fff2e7;
+    --color-muted: #c7bab3;
+    --font-family-base: 'Inter', sans-serif;
+    --font-family-heading: 'Montserrat', sans-serif;
+    --font-family-special: 'Teko', sans-serif;
+    --font-family-highlight: 'Epilogue', sans-serif;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+html {
+     font-family: var(--font-family-base);
+    font-weight: 500;
+}
+
+
+/* HEADER */
+
+
+a {
+    text-decoration:none; 
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+  max-width: 1120px;
+  margin: auto;
+  padding: 1.5rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.hamburguer-menu {
+    display: none;
+    
+ }
+
+
+@media(max-width:980px) {
+    .menu, .github {
+        visibility: hidden;
+    }
+
+    .hamburguer-menu {
+        display: block;
+       
+    }
+}
+
+@media (max-width: 700px ) {
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+.logo {
+    font-family: var(--font-family-special);
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.links {
+    color: #ffd9bfb3;
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    font-weight: 400;
+}   
+
+.github {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+
+}
+
+/* FOOTER */
+
+footer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #191010;
+}
+
+.footer-copy {
+    color: var(--color-accent);
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-autor{
+    color:  #ffd9bfb3;
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    font-weight: 500;
+}
